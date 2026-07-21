@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game": {
+    "name": "Demons' Timeline",
+    "steam_app_id": "4198660",
+    "steam_build_id": "23929782",
+    "depot_manifest": "3308529988738108315"
+  },
+  "captured_at": "2026-07-19T18:17:00+09:00",
+  "files": [
+    {
+      "path": "DemonsTimeline.exe",
+      "length": 653824,
+      "sha256": "833845ab90477faacdf9c6307505ea978e79adf7de4d50431baa141f829612c7"
+    },
+    {
+      "path": "DemonsTimeline_Data/level0",
+      "length": 4122528,
+      "sha256": "ab743ca9fc016a842e45f524ea32f0c3b00f1e70543d217f51bb33025eed7404"
+    },
+    {
+      "path": "DemonsTimeline_Data/resources.assets",
+      "length": 13382600,
+      "sha256": "6573c73ab0254d8cb51a299642b16751b02339596cf246ab4da6776ca25ef519"
+    },
+    {
+      "path": "DemonsTimeline_Data/resources.assets.resS",
+      "length": 626856592,
+      "sha256": "7726de646b792fab7d68cc48efe4ca331bc37be5150f8b0fb9ec01854c8237a9"
+    },
+    {
+      "path": "DemonsTimeline_Data/sharedassets0.assets",
+      "length": 70677720,
+      "sha256": "c32bf2fbf5c57ef6fcb322d670a2f5ae22bef3b05016403fc3adca5064b06d91"
+    },
+    {
+      "path": "DemonsTimeline_Data/sharedassets0.assets.resS",
+      "length": 658473648,
+      "sha256": "ca278cbfe1d35d9a9a69bc6f6cea8fdf58d9cb2bde06e24ad443090e454281b2"
+    },
+    {
+      "path": "DemonsTimeline_Data/Managed/Assembly-CSharp.dll",
+      "length": 762368,
+      "sha256": "0f9a24b6a812c5a431e5ff681ed6cf1022412e849eeb53f098d46d98ed4c1a46"
+    }
+  ]
+}

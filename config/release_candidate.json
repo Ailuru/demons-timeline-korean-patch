@@ -1,0 +1,30 @@
+{
+    "schema_version":  2,
+    "target_slot":  "en_forced_native_fallback_multiatlas_ko_input_gamecsv",
+    "artifacts":  [
+                      {
+                          "target_relative_path":  "DemonsTimeline_Data/resources.assets",
+                          "artifact":  {
+                                           "relative_path":  "patch/resources.assets",
+                                           "length":  13453744,
+                                           "sha256":  "732110187234e2f12164a5089fef0d61a249db3633868101c34ff74210147573"
+                                       }
+                      },
+                      {
+                          "target_relative_path":  "DemonsTimeline_Data/sharedassets0.assets",
+                          "artifact":  {
+                                           "relative_path":  "patch/sharedassets0.assets",
+                                           "length":  70677720,
+                                           "sha256":  "defc8c7fcb718ddff1210c296c11fa7a473435b28bf7b78e5d5d8a0a432bf766"
+                                       }
+                      },
+                      {
+                          "target_relative_path":  "DemonsTimeline_Data/Managed/Assembly-CSharp.dll",
+                          "artifact":  {
+                                           "relative_path":  "patch/Assembly-CSharp.dll",
+                                           "length":  762368,
+                                           "sha256":  "04a4c0c16ac7b5ec625add8cdf7cca5413058db75c96a7808789a311e49ca2bd"
+                                       }
+                      }
+                  ]
+}
