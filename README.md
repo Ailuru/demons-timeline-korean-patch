@@ -6,6 +6,12 @@ Steam판 **Demons' Timeline**을 한국어로 플레이할 수 있도록 제작�
 
 현재 몇 주간의 실제 플레이 테스트와 수동 검수를 진행하고 있습니다. 정식 검증이 끝나기 전에 먼저 플레이하고 싶은 분을 위해 테스트판을 선배포합니다.
 
+## 다운로드
+
+**[최신 한국어 패치 다운로드 (GitHub Releases)](https://github.com/Ailuru/demons-timeline-korean-patch/releases/latest)**
+
+Releases 페이지에서 최신 버전의 ZIP 파일을 내려받아 주세요.
+
 ## 번역 진행 상황
 
 - AI 초벌 번역 — 완료
@@ -32,7 +38,7 @@ Steam판 **Demons' Timeline**을 한국어로 플레이할 수 있도록 제작�
 ## 설치 방법
 
 1. Steam에서 게임을 설치한 뒤 한 번 실행하고 종료합니다.
-2. GitHub Releases에서 최신 테스트판 압축 파일을 내려받습니다.
+2. [GitHub Releases](https://github.com/Ailuru/demons-timeline-korean-patch/releases/latest)에서 최신 테스트판 압축 파일을 내려받습니다.
 3. 압축 파일의 내용을 `DemonsTimeline.exe`가 있는 게임 폴더에 풉니다.
 4. 게임이 완전히 종료되어 있는지 확인합니다.
 5. 게임 폴더에 있는 `install.bat`을 더블클릭합니다.
