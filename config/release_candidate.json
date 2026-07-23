@@ -1,30 +1,63 @@
 {
-    "schema_version":  2,
-    "target_slot":  "en_forced_native_fallback_multiatlas_ko_input_gamecsv",
-    "artifacts":  [
-                      {
-                          "target_relative_path":  "DemonsTimeline_Data/resources.assets",
-                          "artifact":  {
-                                           "relative_path":  "patch/resources.assets",
-                                           "length":  13453744,
-                                           "sha256":  "732110187234e2f12164a5089fef0d61a249db3633868101c34ff74210147573"
-                                       }
-                      },
-                      {
-                          "target_relative_path":  "DemonsTimeline_Data/sharedassets0.assets",
-                          "artifact":  {
-                                           "relative_path":  "patch/sharedassets0.assets",
-                                           "length":  70677720,
-                                           "sha256":  "defc8c7fcb718ddff1210c296c11fa7a473435b28bf7b78e5d5d8a0a432bf766"
-                                       }
-                      },
-                      {
-                          "target_relative_path":  "DemonsTimeline_Data/Managed/Assembly-CSharp.dll",
-                          "artifact":  {
-                                           "relative_path":  "patch/Assembly-CSharp.dll",
-                                           "length":  762368,
-                                           "sha256":  "04a4c0c16ac7b5ec625add8cdf7cca5413058db75c96a7808789a311e49ca2bd"
-                                       }
-                      }
-                  ]
+  "schema_version": 3,
+  "delta_engine": "windows_msdelta_raw",
+  "target_slot": "en_forced_native_fallback_multiatlas_ko_input_gamecsv",
+  "package_version": "V0.9",
+  "package_policy": {
+    "latest_game_build_only": true,
+    "unsupported_requires_interactive_consent": true,
+    "unsupported_force_attempt_at_user_risk": true,
+    "forced_result_hash_verification": false,
+    "completed_game_artifacts_in_package": false
+  },
+  "artifacts": [
+    {
+      "target_relative_path": "DemonsTimeline_Data/resources.assets",
+      "source": {
+        "length": 13382600,
+        "sha256": "6573c73ab0254d8cb51a299642b16751b02339596cf246ab4da6776ca25ef519"
+      },
+      "delta": {
+        "relative_path": "patch/resources.msdelta",
+        "length": 213561,
+        "sha256": "3934ac967d39a4880e49f233b50a6cc3646cadf39adf5cb1670ad78936d10e90"
+      },
+      "result": {
+        "length": 13453712,
+        "sha256": "6248483f10e29024561a6f0ce91bf0995557be12bf7803b0900a5159e4f5838a"
+      }
+    },
+    {
+      "target_relative_path": "DemonsTimeline_Data/sharedassets0.assets",
+      "source": {
+        "length": 70677720,
+        "sha256": "c32bf2fbf5c57ef6fcb322d670a2f5ae22bef3b05016403fc3adca5064b06d91"
+      },
+      "delta": {
+        "relative_path": "patch/sharedassets0.msdelta",
+        "length": 46,
+        "sha256": "e5e53a6afeccb1d4ae267489cbe6698209f11c4584c6ddd4fdba3ae15b188c5e"
+      },
+      "result": {
+        "length": 70677720,
+        "sha256": "defc8c7fcb718ddff1210c296c11fa7a473435b28bf7b78e5d5d8a0a432bf766"
+      }
+    },
+    {
+      "target_relative_path": "DemonsTimeline_Data/Managed/Assembly-CSharp.dll",
+      "source": {
+        "length": 762368,
+        "sha256": "0f9a24b6a812c5a431e5ff681ed6cf1022412e849eeb53f098d46d98ed4c1a46"
+      },
+      "delta": {
+        "relative_path": "patch/assembly-csharp.msdelta",
+        "length": 42,
+        "sha256": "f1cffbc6c364b9f5dcecc897913e128d8a7d019312118bf27ca24c76c141d900"
+      },
+      "result": {
+        "length": 762368,
+        "sha256": "04a4c0c16ac7b5ec625add8cdf7cca5413058db75c96a7808789a311e49ca2bd"
+      }
+    }
+  ]
 }

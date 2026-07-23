@@ -17,12 +17,51 @@ param(
 
     [Parameter(DontShow)]
     [ValidateRange(0, 100)]
-    [int]$TestFailureAfterReplaceCount = 0
+    [int]$TestFailureAfterReplaceCount = 0,
+
+    [Parameter(DontShow)]
+    [ValidateSet('Auto', 'Running', 'NotRunning')]
+    [string]$TestGameProcessState = 'Auto',
+
+    [Parameter(DontShow)]
+    [ValidateRange(0, 100)]
+    [int]$TestRollbackFailureAtOperation = 0
 )
 
 $ErrorActionPreference = 'Stop'
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $repositoryRoot = Split-Path -Parent (Split-Path -Parent $scriptRoot)
+
+$dispatchManifest = if ([string]::IsNullOrWhiteSpace($ReleaseManifestPath)) {
+    Join-Path $repositoryRoot 'config\release_candidate.json'
+}
+else { $ReleaseManifestPath }
+if (Test-Path -LiteralPath $dispatchManifest -PathType Leaf) {
+    $dispatchProbe = Get-Content -LiteralPath $dispatchManifest -Raw -Encoding UTF8 | ConvertFrom-Json
+    if ([int]$dispatchProbe.schema_version -eq 3) {
+        if (-not [string]::IsNullOrWhiteSpace($PatchAsset)) {
+            throw 'PatchAsset override is unavailable for a delta package.'
+        }
+        $deltaInstaller = Join-Path $scriptRoot 'Install-KoreanDeltaPatch.ps1'
+        if (-not (Test-Path -LiteralPath $deltaInstaller -PathType Leaf)) {
+            throw 'Schema-v3 delta installer module is missing.'
+        }
+        $deltaArguments = @{
+            Action = $Action
+            GameRoot = $GameRoot
+            BaselinePath = $BaselinePath
+            ReleaseManifestPath = $ReleaseManifestPath
+            BackupRoot = $BackupRoot
+            Json = $Json
+            TestFailureAfterReplace = $TestFailureAfterReplace
+            TestFailureAfterReplaceCount = $TestFailureAfterReplaceCount
+            TestGameProcessState = $TestGameProcessState
+            TestRollbackFailureAtOperation = $TestRollbackFailureAtOperation
+        }
+        & $deltaInstaller @deltaArguments
+        return
+    }
+}
 
 function Get-Sha256([string]$Path) {
     return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()

@@ -1,4 +1,5 @@
 @echo off
+chcp 65001 >nul
 setlocal
 cd /d "%~dp0"
 set "GAME_ROOT=%~dp0"
@@ -8,11 +9,9 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0tools\release_inst
 set "INSTALL_EXIT=%ERRORLEVEL%"
 
 echo.
-if "%INSTALL_EXIT%"=="0" (
-    echo Korean patch installation completed.
-) else (
-    echo Installation failed. No unsupported game files were intentionally changed.
-    echo Check the error message above and confirm that the game build is supported.
+if not "%INSTALL_EXIT%"=="0" (
+    echo 설치에 실패했습니다. 위 오류 메시지를 확인해 주세요.
+    echo 롤백이 완료되지 않았다는 메시지가 있다면 안내된 복구 파일을 삭제하지 마세요.
 )
 
 if not defined DEMONS_TIMELINE_INSTALLER_NO_PAUSE pause
