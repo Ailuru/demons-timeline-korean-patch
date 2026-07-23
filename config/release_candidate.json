@@ -2,7 +2,7 @@
   "schema_version": 3,
   "delta_engine": "windows_msdelta_raw",
   "target_slot": "en_forced_native_fallback_multiatlas_ko_input_gamecsv",
-  "package_version": "V0.9",
+  "package_version": "V0.9.1",
   "package_policy": {
     "latest_game_build_only": true,
     "unsupported_requires_interactive_consent": true,
@@ -19,12 +19,12 @@
       },
       "delta": {
         "relative_path": "patch/resources.msdelta",
-        "length": 213561,
-        "sha256": "3934ac967d39a4880e49f233b50a6cc3646cadf39adf5cb1670ad78936d10e90"
+        "length": 213584,
+        "sha256": "30eeea6169532b54cd6ff58e493fc4dfb8bca0a45a7e294d7ed26f8032f9f87e"
       },
       "result": {
-        "length": 13453712,
-        "sha256": "6248483f10e29024561a6f0ce91bf0995557be12bf7803b0900a5159e4f5838a"
+        "length": 13453760,
+        "sha256": "5e5245c22566f5d05a1a24f17e924f6dab1eebaa36a1886816a8099f6e61abb1"
       }
     },
     {
