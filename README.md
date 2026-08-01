@@ -51,8 +51,6 @@ C:\Program Files (x86)\Steam\steamapps\common\Demons'Timeline
 
 Steam 라이브러리에서 게임을 우클릭한 뒤 **관리 → 로컬 파일 보기**를 선택해도 게임 폴더를 열 수 있습니다.
 
-압축 파일 최상단에는 `install.bat`, `restore.bat`, `DemonsTimeline_KoreanPatch` 폴더만 있습니다. 실제 설치기와 패치 데이터는 전용 폴더 안에 격리됩니다.
-
 ## 원본으로 복원
 
 1. 게임을 완전히 종료합니다.
