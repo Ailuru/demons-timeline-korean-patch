@@ -22,7 +22,7 @@ AI 초벌 번역에는 GPT-5.6 Sol을 사용했습니다.
 
 ## 다운로드
 
-**[최신 한국어 패치 다운로드 (GitHub Releases)](https://github.com/Ailuru/demons-timeline-korean-patch/releases/latest)**
+**[최신 한국어 패치 다운로드 (GitHub Releases)](https://github.com/Ailuru/demons-timeline-korean-patch/releases)**
 
 Releases 페이지에서 최신 버전의 ZIP 파일을 내려받아 주세요.
 
