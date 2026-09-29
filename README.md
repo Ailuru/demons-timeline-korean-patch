@@ -15,12 +15,10 @@ Steam Windows판용 비공식 한국어 패치입니다.
 
 ## 설치 방법
 
-1. Steam에서 게임을 설치한 뒤 한 번 실행하고 종료합니다.
-2. [GitHub Releases](https://github.com/Ailuru/demons-timeline-korean-patch/releases/latest)에서 최신 패치 압축 파일을 내려받습니다.
-3. 압축 파일의 내용을 `DemonsTimeline.exe`가 있는 게임 폴더에 풉니다.
-4. 게임이 완전히 종료되어 있는지 확인합니다.
-5. 게임 폴더에 있는 `install.bat`을 더블클릭합니다.
-6. 설치가 완료되면 게임을 실행합니다. 언어 선택 화면에서는 아무 언어나 선택해 주세요. 모두 한국어로 표시됩니다.
+1. [GitHub Releases](https://github.com/Ailuru/demons-timeline-korean-patch/releases/latest)에서 최신 패치 압축 파일을 내려받습니다.
+2. 압축 파일의 내용을 `DemonsTimeline.exe`가 있는 게임 폴더에 풉니다.
+3. 게임 폴더에 있는 `install.bat`을 더블클릭합니다.
+4. 설치가 완료되면 게임을 실행합니다. 언어 선택 화면에서는 아무 언어나 선택해 주세요. 모두 한국어로 표시됩니다.
 
 Steam 게임 폴더는 보통 다음 위치에 있습니다.
 
