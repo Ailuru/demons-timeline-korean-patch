@@ -1,47 +1,64 @@
 {
-  "schema_version": 1,
-  "game": {
-    "name": "Demons' Timeline",
-    "steam_app_id": "4198660",
-    "steam_build_id": "23929782",
-    "depot_manifest": "3308529988738108315"
-  },
-  "captured_at": "2026-07-19T18:17:00+09:00",
+  "captured_at": "2026-08-25T12:51:26.2560113Z",
   "files": [
     {
-      "path": "DemonsTimeline.exe",
       "length": 653824,
+      "path": "DemonsTimeline.exe",
       "sha256": "833845ab90477faacdf9c6307505ea978e79adf7de4d50431baa141f829612c7"
     },
     {
-      "path": "DemonsTimeline_Data/level0",
+      "length": 192644,
+      "path": "DemonsTimeline_Data/globalgamemanagers",
+      "sha256": "69d9a90e11fc02b0ca91b22881bc412a908ed17c707b3db090c65395e1d81a7b"
+    },
+    {
       "length": 4122528,
-      "sha256": "ab743ca9fc016a842e45f524ea32f0c3b00f1e70543d217f51bb33025eed7404"
+      "path": "DemonsTimeline_Data/level0",
+      "sha256": "271c24612ea5fc66ceaf07d6fc4fe1ed9f3b5878bc220b35b81c8c5c48ca65b6"
     },
     {
+      "length": 13397336,
       "path": "DemonsTimeline_Data/resources.assets",
-      "length": 13382600,
-      "sha256": "6573c73ab0254d8cb51a299642b16751b02339596cf246ab4da6776ca25ef519"
+      "sha256": "3dfc69d615c78bf818ecca31bad2502d8b663830838bda120872868ab9d908ba"
     },
     {
+      "length": 651223440,
       "path": "DemonsTimeline_Data/resources.assets.resS",
-      "length": 626856592,
-      "sha256": "7726de646b792fab7d68cc48efe4ca331bc37be5150f8b0fb9ec01854c8237a9"
+      "sha256": "ddc4401a07ad95f08ec994e81d644ab4beaedb4880b07ff63793c36a1fecf919"
     },
     {
+      "length": 88050216,
       "path": "DemonsTimeline_Data/sharedassets0.assets",
-      "length": 70677720,
-      "sha256": "c32bf2fbf5c57ef6fcb322d670a2f5ae22bef3b05016403fc3adca5064b06d91"
+      "sha256": "7707b053012b49bb426756e8cd6aaebab92ad3ce1d8b9e31ab5ea587538776e6"
     },
     {
-      "path": "DemonsTimeline_Data/sharedassets0.assets.resS",
       "length": 658473648,
+      "path": "DemonsTimeline_Data/sharedassets0.assets.resS",
       "sha256": "ca278cbfe1d35d9a9a69bc6f6cea8fdf58d9cb2bde06e24ad443090e454281b2"
     },
     {
+      "length": 762880,
       "path": "DemonsTimeline_Data/Managed/Assembly-CSharp.dll",
-      "length": 762368,
-      "sha256": "0f9a24b6a812c5a431e5ff681ed6cf1022412e849eeb53f098d46d98ed4c1a46"
+      "sha256": "cf1aef47b37b547ec0cf42969d9d71be19c472df0ee7cd5a3d7571e5cc6b51bb"
     }
-  ]
+  ],
+  "game": {
+    "depot_manifest": "6301705686041359733",
+    "name": "Demons' Timeline",
+    "steam_app_id": "4198660",
+    "steam_build_id": "24925173"
+  },
+  "official_source_provenance": {
+    "DemonsTimeline_Data/Managed/Assembly-CSharp.dll": {
+      "note": "The depot did not update this file. The live installation retained the prior Korean two-byte patch, so the clean official bytes are inherited from the hash-verified build 24627716 official copy.",
+      "relative_path": "translation_workspace/update_24925173/originals/Assembly-CSharp.dll"
+    },
+    "DemonsTimeline_Data/resources.assets": {
+      "relative_path": "translation_workspace/update_24925173/originals/resources.assets"
+    },
+    "DemonsTimeline_Data/sharedassets0.assets": {
+      "relative_path": "translation_workspace/update_24925173/originals/sharedassets0.assets"
+    }
+  },
+  "schema_version": 1
 }

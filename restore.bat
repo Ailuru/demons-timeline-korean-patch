@@ -13,6 +13,19 @@ if /I not "%ANSWER%"=="Y" (
     exit /b 0
 )
 
+if not exist "%~dp0tools\release_installer\Install-KoreanPatch.ps1" (
+    echo [PACKAGE_SCRIPT] 패치 실행 파일을 찾을 수 없습니다.
+    echo ZIP 전체를 압축 해제하고 install.bat, restore.bat, DemonsTimeline_KoreanPatch 폴더를 함께 옮겨 주세요.
+    if not defined DEMONS_TIMELINE_INSTALLER_NO_PAUSE pause
+    exit /b 1
+)
+where powershell.exe >nul 2>nul
+if errorlevel 1 (
+    echo [POWERSHELL_MISSING] Windows PowerShell을 찾을 수 없습니다. Windows 환경과 PATH 설정을 확인해 주세요.
+    if not defined DEMONS_TIMELINE_INSTALLER_NO_PAUSE pause
+    exit /b 1
+)
+
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0tools\release_installer\Install-KoreanPatch.ps1" -Action Restore -GameRoot "%GAME_ROOT%"
 set "RESTORE_EXIT=%ERRORLEVEL%"
 

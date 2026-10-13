@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
     [Parameter(Mandatory)]
     [ValidateSet('Install', 'Restore', 'Status')]
@@ -36,15 +36,23 @@ $dispatchManifest = if ([string]::IsNullOrWhiteSpace($ReleaseManifestPath)) {
     Join-Path $repositoryRoot 'config\release_candidate.json'
 }
 else { $ReleaseManifestPath }
+if (-not (Test-Path -LiteralPath $dispatchManifest -PathType Leaf)) {
+    throw "[PACKAGE_CONFIG] 패치 설정 파일이 없습니다: $dispatchManifest`n최신 패치 ZIP 전체를 다시 압축 해제해 주세요."
+}
 if (Test-Path -LiteralPath $dispatchManifest -PathType Leaf) {
-    $dispatchProbe = Get-Content -LiteralPath $dispatchManifest -Raw -Encoding UTF8 | ConvertFrom-Json
+    try {
+        $dispatchProbe = Get-Content -LiteralPath $dispatchManifest -Raw -Encoding UTF8 | ConvertFrom-Json
+        if ($null -eq $dispatchProbe -or [int]$dispatchProbe.schema_version -notin @(2, 3)) { throw 'Unknown schema' }
+    } catch {
+        throw "[PACKAGE_CONFIG] 패치 설정을 읽을 수 없거나 지원하지 않는 형식입니다. 최신 ZIP 전체를 다시 압축 해제해 주세요.`n상세: $($_.Exception.Message)"
+    }
     if ([int]$dispatchProbe.schema_version -eq 3) {
         if (-not [string]::IsNullOrWhiteSpace($PatchAsset)) {
             throw 'PatchAsset override is unavailable for a delta package.'
         }
         $deltaInstaller = Join-Path $scriptRoot 'Install-KoreanDeltaPatch.ps1'
         if (-not (Test-Path -LiteralPath $deltaInstaller -PathType Leaf)) {
-            throw 'Schema-v3 delta installer module is missing.'
+            throw '[PACKAGE_SCRIPT] 설치기 파일이 누락되었습니다. 최신 패치 ZIP을 다시 받아 전체를 압축 해제하고, install.bat와 DemonsTimeline_KoreanPatch 폴더를 함께 옮겨 주세요.'
         }
         $deltaArguments = @{
             Action = $Action
