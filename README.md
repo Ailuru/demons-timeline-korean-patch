@@ -28,6 +28,33 @@ C:\Program Files (x86)\Steam\steamapps\common\Demons'Timeline
 
 Steam 라이브러리에서 게임을 우클릭한 뒤 **관리 → 로컬 파일 보기**를 선택해도 게임 폴더를 열 수 있습니다.
 
+### 설치 위치 확인
+
+압축을 풀고 **`install.bat`와 `DemonsTimeline.exe`가 같은 폴더에 있는지** 확인해 주세요.
+
+**✅ 올바른 예**
+```text
+Demons'Timeline/
+├─ DemonsTimeline.exe
+├─ DemonsTimeline_Data/
+├─ install.bat
+├─ restore.bat
+└─ DemonsTimeline_KoreanPatch/
+```
+
+**❌ 잘못된 예 — 패치가 하위 폴더에 들어간 경우**
+```text
+Demons'Timeline/
+├─ DemonsTimeline.exe
+├─ DemonsTimeline_Data/
+└─ Demons-Timeline-Korean-Patch-v1.2.2/
+   ├─ install.bat
+   ├─ restore.bat
+   └─ DemonsTimeline_KoreanPatch/
+```
+
+이 경우 패치 폴더 안의 **`install.bat`, `restore.bat`, `DemonsTimeline_KoreanPatch` 폴더를 모두 한 단계 위로** 옮겨 주세요.
+
 ## 원본으로 복원
 
 1. 게임을 완전히 종료합니다.
