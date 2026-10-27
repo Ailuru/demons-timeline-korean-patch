@@ -2,7 +2,7 @@
   "schema_version": 3,
   "delta_engine": "windows_msdelta_raw",
   "target_slot": "en_forced_native_fallback_multiatlas_ko_input_gamecsv",
-  "package_version": "v1.2.2",
+  "package_version": "v1.2.3",
   "package_policy": {
     "latest_game_build_only": true,
     "unsupported_requires_interactive_consent": true,
@@ -14,17 +14,17 @@
     {
       "target_relative_path": "DemonsTimeline_Data/resources.assets",
       "source": {
-        "length": 13397336,
-        "sha256": "3dfc69d615c78bf818ecca31bad2502d8b663830838bda120872868ab9d908ba"
+        "length": 13404600,
+        "sha256": "3f5292e45843b39f1b1d6de1927aa554d003c9ea37c0397e5b521db28de6917e"
+      },
+      "result": {
+        "length": 54243456,
+        "sha256": "aee7bcc2549098b7f9826cd350f832df3cdc6263b08bf7518db7af70108ea435"
       },
       "delta": {
         "relative_path": "patch/resources.msdelta",
-        "length": 2574154,
-        "sha256": "bccea631dc7391849e0d1a5e5346f041caa7430f1a3102f9991edca05cd1b500"
-      },
-      "result": {
-        "length": 54236168,
-        "sha256": "a864d62cf33df39a8964e8effc36780f15ffe9035c52d6770ce3bf99fa8409c2"
+        "length": 2574158,
+        "sha256": "7d6056f716396cd4e88aeb3cdaf5c0ba985090535bbc9ba2a8de7b3e1a2d1e7c"
       }
     },
     {
@@ -33,30 +33,30 @@
         "length": 88050216,
         "sha256": "7707b053012b49bb426756e8cd6aaebab92ad3ce1d8b9e31ab5ea587538776e6"
       },
-      "delta": {
-        "relative_path": "patch/sharedassets0.msdelta",
-        "length": 46,
-        "sha256": "92e3c982b31cc6886a69b4ff94484805dd54677cfb2820895d5e0c3d7c83e3d0"
-      },
       "result": {
         "length": 88050216,
         "sha256": "a33000f293e1833c6ee7c3437620b488a6816c154ad9a8e0ab447b9ba672c787"
+      },
+      "delta": {
+        "relative_path": "patch/sharedassets0.msdelta",
+        "length": 46,
+        "sha256": "dfbcc1331152eb2f489d7c808858db87340387ca36f1120675cd098217eaaa98"
       }
     },
     {
       "target_relative_path": "DemonsTimeline_Data/Managed/Assembly-CSharp.dll",
       "source": {
         "length": 762880,
-        "sha256": "cf1aef47b37b547ec0cf42969d9d71be19c472df0ee7cd5a3d7571e5cc6b51bb"
+        "sha256": "2b73255c46ad6821a2eb8213cafbb769fc92eabe6c1e98aeff795243b58d6914"
+      },
+      "result": {
+        "length": 762880,
+        "sha256": "99396f3b959a625435c2740157f76aa2a4d4f5c3c21a27e39b4db2d497353bc2"
       },
       "delta": {
         "relative_path": "patch/assembly-csharp.msdelta",
         "length": 42,
-        "sha256": "60897a6c63a846ce43e053e04296b117ea781ec41e9e7ede44334156b9220126"
-      },
-      "result": {
-        "length": 762880,
-        "sha256": "f484a52a55b84372df8063e50577bfd27520b09b8ea3c28b67ad729831702fc8"
+        "sha256": "2292797bd55c0d0c7739ebbf957080a6c34ec66a992cda51dc5c632c89f7e5c5"
       }
     }
   ]

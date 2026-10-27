@@ -7,9 +7,8 @@ Steam Windows판용 비공식 한국어 패치입니다.
 ## 지원 환경
 
 - Steam Windows판
-- 게임 버전: `V2.1`
 - Steam App ID: `4198660`
-- 확인된 Build ID: `24925173`
+- 확인된 Build ID: `26240127`
 
 지원되지 않는 게임 버전에서는 경고가 표시됩니다. 설치를 계속할 수 있지만 정상 작동을 보장하지 않으므로, 가능하면 패치 업데이트를 기다려 주세요. 필요한 경우 Steam이 제공하는 콘솔 기능으로 지원 대상 구버전을 내려받아 적용할 수 있습니다.
 
@@ -17,7 +16,7 @@ Steam Windows판용 비공식 한국어 패치입니다.
 
 1. [GitHub Releases](https://github.com/Ailuru/demons-timeline-korean-patch/releases/latest)에서 최신 패치 압축 파일을 내려받습니다.
 2. 압축 파일의 내용을 `DemonsTimeline.exe`가 있는 게임 폴더에 풉니다.
-3. 게임 폴더에 있는 `install.bat`을 더블클릭합니다.
+3. 게임이 완전히 종료된 상태에서 게임 폴더에 있는 `install.bat`을 더블클릭합니다.
 4. 설치가 완료되면 게임을 실행합니다. 언어 선택 화면에서는 아무 언어나 선택해 주세요. 모두 한국어로 표시됩니다.
 
 Steam 게임 폴더는 보통 다음 위치에 있습니다.
@@ -47,7 +46,7 @@ Demons'Timeline/
 Demons'Timeline/
 ├─ DemonsTimeline.exe
 ├─ DemonsTimeline_Data/
-└─ Demons-Timeline-Korean-Patch-v1.2.2/
+└─ Demons-Timeline-Korean-Patch-v1.2.3/
    ├─ install.bat
    ├─ restore.bat
    └─ DemonsTimeline_KoreanPatch/
